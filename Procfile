@@ -1,1 +1,4 @@
-Worker: node .
+Worker: "scripts": {
+    "test": "node .",
+    "start": "node ."
+  },
