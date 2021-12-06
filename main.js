@@ -1,6 +1,6 @@
-const { Client, Intents } = require('discord.js');
+const Discord = require('discord.js');
 
-const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MESSAGE_TYPING']});
 
 const prefix = '-';
 
@@ -87,4 +87,4 @@ client.on('message', message =>{
     
 });
 
-bot.login(process.env.token);
+client.login('OTE1NDIyOTE5MDMzNzU3NzE3.YabYBw.x4NCu6cgzbEfhbfcrpWhCWHqOzU');
